@@ -1,0 +1,11 @@
+AWS Features used:
+  - S3
+    - Used to store necessary files including pictures used and the javascript and html that makes up the site itself
+  - DynamoDB
+    - Stores information about each bundle and the items within those bundles
+  - Lambda
+    - Works as a serverless backend for the site
+    - Allows the database to be queryable through an API I set up
+  - API Gateway
+    - Created a GET endpoint that could be used to fetch the bundle information
+  - IAM Role with DynamoDB Read Acess that was assigned to the Lambda function       
